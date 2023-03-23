@@ -75,6 +75,15 @@ function sommaDue(numero) {                  // Funzione Mista
 }
 console.log(sommaDue(5));
 
+function minimum(a,b) {
+    if (b - a >= 0) {
+        return a;       
+    } else {   
+        return b;        
+    }
+}
+console.log(minimum(-6,4));
+
 //-----------------------------------------------------------------------------------------------------------
 //ESERCIZI
 // 1) scrivere una funzione che dato un numero se è positivo lo moltiplichi per due
@@ -83,6 +92,27 @@ console.log(sommaDue(5));
 // 4) scrivere una funzione che restituisca la scacchiera 
 // 5) scrivere una funzione che dato un numero resituisca una stringa con la logica FizzBuzz
 // 6) scrivere una funzione che data una stringa restituisca una stringa composta solo dai caratteri dispari dell'originale 
+
+function moltiplicaPositivo(positivo) {
+    if (positivo>=0) {
+        return positivo * 2;
+    }  
+}
+console.log(moltiplicaPositivo(4));
+
+function rendiMaiuscolo(maiuscolo) {
+    return maiuscolo.toUpperCase();
+}
+console.log(rendiMaiuscolo('ciao'));
+
+function lunghezza(stringa) {
+    if (stringa.length >= 10) {
+        return true;    
+    } else {
+        return false 
+    }
+}
+console.log(lunghezza('677889900000000000'));
 
 
 
